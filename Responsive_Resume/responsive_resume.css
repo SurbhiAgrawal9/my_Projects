@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Write CSS code below */
+:root {
+	--color-gray-light-1: #f8f8f8;
+	--color-gray-light-2: #e9e9e9;
+	--color-gray-light-3: #dedede;
+	--color-gray-dark-1: #545454;
+	--color-gray-dark-2: #737373;
+	--color-gray-dark-3: #9a9a9a;
+	--color-blue-dark-1: #00387f;
+	--color-tiffany: #00a6a6;
+	--profile-theme: #4682bf;
+	--timeline-circle-theme: #14253e;
+	
+	--pgbar-length: 100%;
+
+	--MATH-PI: 3.1415px;
+	--percent: 100;
+}
+
+html {
+	font-size: 100%;
+    font-family: 'PT Sans', sans-serif;
+
+
+}
+
+
+
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: #003147;
+    padding: 1rem;
+    color: white;
+}
+section{
+    display: block;
+}
+.right-section{
+    color: #000000;
+    width: 90%;
+    grid-column: span 1/span 2;
+    background-color: #f7f7f7;
+    font-size: 16px;
+    padding-top: 2rem;
+    padding-bottom: 32px;
+    padding-left: 3rem;
+    padding-right: 48px;
+}
+.profile-image{
+    width: 60%;
+    margin: auto;
+    display: block;
+    border: 5px white solid;
+    border-radius: 30%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.8rem;
+   text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.skills{
+font-size: 00.75rem;
+text-align: center;
+text-transform: uppercase;
+padding-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px white solid;
+    height: 4px;
+    background-color: #e3d8d3da;
+    background-image: linear-gradient(to right,yellow, red);
+}
+.progress-bar1{
+    
+    height: 4px;
+    background-color: #e3d8d3da;
+    background-image: linear-gradient(to right, rgb(95, 36, 246), rgb(242, 9, 40));
+}
+.para{
+    text-align: justify;
+    text-transform: capitalize;
+    text-indent: 65px;
+}
+.social-media ul li{
+    display: inline;
+    padding-left: 3em;
+    margin-bottom: 5px;
+    
+}
+.social-media li:hover{
+    transform: scale(1.05);
+}
+.personal i {
+    position: relative;
+    margin-right: 10px;
+    top: 5px;
+    left: 5px;
+  }
+  .right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+  }
+  
+.text{
+font-size: 00.75rem;
+text-align: center;
+text-transform: uppercase;
+padding-top: 1rem;
+padding-bottom: 1rem;
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+
+}
+.int{
+    float:left;
+    margin:0 5px;
+}
+.text{
+   
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+    i{
+        color: rgb(46, 94, 227);
+    }
+
+  @media  screen and (max-width:673px) {
+    .main-content{
+    grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+ .Projects ul li{
+    padding-bottom: 1em;
+    list-style-type: circle;list-style-type: square;
+    
+ }
+
+ .timeline-block {
+	position: relative;
+	padding-left: 30px;
+}
+.timeline-block:not(:last-of-type) {
+	margin-bottom: 1rem;	
+}
+.timeline-block h3 {
+	font-size: 1rem;
+	margin: 5px 0;
+	transition: all 0.3s;
+}
+.timeline-block p {
+	font-size: 0.8rem;
+	margin: 5px 0;
+}
+.timeline-block time {
+	font-size: 0.8rem;
+	color: var(--color-gray-dark-2);
+}
+.timeline-block::before {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border: 3px solid var(--timeline-circle-theme);
+	border-radius: 50%;
+	left: -10px;
+	top: -5px;
+}
+.timeline-block::after {
+	position: absolute;
+	content: '';
+	width: 3px;
+	height: 100%;
+	background-color: var(--timeline-circle-theme);
+	left: -1px;
+	top: 13px;
+}
+.timeline-block:hover h3 {
+	color: var(--color-tiffany);
+}
+.timeline-block:hover::before {
+	animation: circle 1.2s infinite;
+}
+
+.favor-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+.favor-list > li {
+	display: flex;
+	flex: 1 0 0;
+	align-items: center;
+	justify-content: baseline;
+	flex-direction: column;
+	color: var(--profile-theme);
+	padding: 1rem 0;
+	transition: all 0.3s;
+}
+.favor-list > li > i {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	width: 50px;
+	height: 50px;
+}
+.favor-list > li:hover {
+	transform: scale(1.2);
+	color: var(--color-tiffany);
+}
+.favor-list > li > span {
+	letter-spacing: 1px;
+}
+
+
+ul li:hover{
+    transform: scale(1.05);
+    
+}
+
+a:hover i {
+    transform: scale(1.5);
+    color: blue;
+}
+.icon:hover{
+    transform: scale(1.08);
+	color: var(--color-tiffany);
+}
