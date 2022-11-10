@@ -1,0 +1,72 @@
+
+main#main {
+    grid-area: mainContent;
+}
+body {
+    font-family: "Lato", sans-serif;
+  }
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dropdown-container {
+    display: none;
+   
+    padding-left: 8px;
+  }
+
+  .sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    color: whitesmoke
+
+
+    
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(7, 7, 75);
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: aliceblue;
+  }
+  .main {
+    margin-left: 310px; 
+    font-size: 20px;
+    padding: 0px 10px;
+  }
+  .active {
+    background-color: tr;
+    color: goldenrod;
+  }
+  span {
+    content: "\2B9A";
+}
+  
+  
+  
+  
